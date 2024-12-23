@@ -1,0 +1,84 @@
+/* For mobile screens (up to 768px) */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-right ul {
+        flex-direction: column;
+        gap: 20px;
+        display: none; /* Hidden by default */
+        width: 100%;
+    }
+
+    .header-right ul.active {
+        display: flex; /* Show when active */
+        background-color: var(--header-bg);
+        padding: 20px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex; /* Show on small screens */
+    }
+
+    /* Main Section */
+    #main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #image-container img {
+        width: 150px;
+    }
+
+    #text-container h1 {
+        font-size: 28px;
+    }
+
+    #buttons-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* About Section */
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-image img {
+        width: 200px;
+    }
+
+    /* Skills Section */
+    #skills-list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+/* Responsive grid for smaller screens */
+@media (max-width: 768px) {
+    .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}

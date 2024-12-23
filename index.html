@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Portfolio</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <a href="mailto:divyeshkumarmotka@gmail.com">divyeshkumarmotka@gmail.com</a>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!-- Theme Toggle Button -->
+                        <li>
+                            <button id="theme-toggle" class="theme-toggle">🌙</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section id="main" class="main-content">
+        <div class="content-container">
+            <div id="image-container">
+                <img src="/Img/poho.png" alt="Your Image">
+            </div>
+            <div id="text-container">
+                <div id="text-content">
+                    <p>Hello, I'm</p>
+                    <h1>Divyesh Motka</h1>
+                    <p>MERN Stack Developer</p>
+                    <div id="buttons-container">
+                        <button class="btn" >DOWNLODE CV</button>
+                        <button class="btn">
+                            <a href="#contact">CONTACT ME</a>
+                        </button>
+                    </div>
+                    <div id="icons-container">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" id="linkedin-icon">
+                            <img src="/Img/linkdinlogo.jpg" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/yourprofile" target="_blank" id="github-icon">
+                            <img src="/Img/githublogo.svg" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div id="about-text">
+                <h2>About Me</h2>
+                <p>I am a passionate MERN Stack Developer specializing in building dynamic and responsive web applications.
+                     With expertise in MongoDB, Express.js, React, and Node.js, I create efficient and scalable solutions. 
+                     I enjoy solving problems and turning ideas into reality through clean, robust code. 
+                     Let’s collaborate and bring innovative projects to life!</p>
+                <div id="contact-button">
+                    <button class="btn">
+                        <a href="#contact">CONTACT ME</a>
+                    </button>
+                </div>
+            </div>
+            <div id="about-image">
+                <img src="/Img/aboutimg.webp" alt="About Me">
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <div id="skills-text">
+                <h2>My Skills</h2>
+                <p>Explore my expertise in building robust web applications with the latest technologies in the MERN stack.</p>
+                <div id="projects-button">
+                    <button class="btn"><a href="#projects">SEE PROJECTS</a></button>
+                </div>
+            </div>
+            
+            <div id="skills-list">
+                <!-- MongoDB Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/mongodblogo.svg" alt="MongoDB">
+                    <h3>MongoDB</h3>
+                </div>
+    
+                <!-- Express Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/expressjslogo.jpg" alt="Express">
+                    <h3>Express</h3>
+                </div>
+    
+                <!-- React Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/Reactlogo.svg" alt="React">
+                    <h3>React</h3>
+                </div>
+    
+                <!-- Node.js Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/nodejslogo.png" alt="Node.js">
+                    <h3>Node.js</h3>
+                </div>
+    
+                <!-- JavaScript Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/JavaScript-Symbol.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+    
+                <!-- HTML5 Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/html5logo.png" alt="HTML5">
+                    <h3>HTML5</h3>
+                </div>
+    
+                <!-- CSS3 Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/css3-logo.png" alt="CSS3">
+                    <h3>CSS3</h3>
+                </div>
+    
+                <!-- Git Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/gitlogo.png" alt="Git">
+                    <h3>Git</h3>
+                </div>
+    
+                <!-- GitHub Skill Item -->
+                <div class="skill-item">
+                    <img src="/Img/githublogo.svg" alt="GitHub">
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-text">
+                <p>Get in Touch</p>
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

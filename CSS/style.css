@@ -733,9 +733,77 @@ header {
     display: none;
 }
 
-/* project section */
-#projects{
+/* Project Section */
+#projects {
     width: 100vw;
     height: 90vh;
+    background: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ff9800;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff9800;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.view-btn {
+    background: #ff9800;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.view-btn-a {
+    text-decoration: none;
+    color: #090808;
+}
+
+.view-btn:hover {
+    background: #e67e22;
+    transform: scale(1.1);
+}
+
+.view-btn:active {
+    background: #ca6e17;
 }
 
